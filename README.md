@@ -1,89 +1,137 @@
-#🎓 CareerConnect – Job Fair Management System
-CareerConnect is a comprehensive, database-driven desktop application designed to streamline the management of job fairs at FAST-NUCES Islamabad. Built using C# Windows Forms and SQL Server, the system provides tailored interfaces and workflows for students, recruiters, TPO (Training & Placement Office), and booth coordinators to manage the full lifecycle of job fair events.
+# 🎓 CareerConnect – Job Fair Management System
 
-# Collaborators:
-🧑‍💻 Muhammad Hashir (23I-3047)
-🧑‍💻 Zaki Haider (23I-3091)
+CareerConnect is a comprehensive, database-driven desktop application designed to streamline the management of job fairs at FAST-NUCES Islamabad. Built using **C# Windows Forms** and **SQL Server**, the system provides tailored interfaces and workflows for students, recruiters, TPO (Training & Placement Office), and booth coordinators to manage the full lifecycle of job fair events.
 
-#🔁 Project Iterations
-#🔹 Iteration 1: Database Design
-Tools Used: SQL Server Management Studio
-Deliverables:
-Entity Relationship Diagram (ERD)
-Normalized relational schema (up to 3NF)
-Data insertion scripts
-Key Tables:
-USERS, STUDENT, RECRUITER, TPO, COORDINATOR
-JOB_FAIR_EVENTS, BOOTH, COMPANY, INTERVIEWS, APPLICATION
-Associative tables for skills, reviews, job postings, and more
-Sample Data Requirements:
-80+ students, 20+ companies, 5+ job fairs
-200+ applications and interviews
-#🔹 Iteration 2: Interface Design
-Platform: Windows Forms in Visual Studio 2019+
-Key User Interfaces:
-Student login, profile creation, job fair browsing, interview scheduling
-Recruiter account, job posting, shortlisting, interview finalization
-TPO dashboard for admin approval, job fair scheduling, reporting
-Booth coordinator check-ins and booth traffic logging
-Navigation Flow:
-Modular access based on role after login
-Form-to-form transitions with context preservation (e.g., studentID passed through)
-#🔹 Iteration 3: Final Integration & Functionality
-Backend: SQL Server with stored procedures for all core operations
-Frontend: Fully implemented Windows Forms application
-System Features:
-Authentication (Students via FAST email, Recruiters pending approval)
-Profile management with GPA, semester, certifications, and skills
-Advanced job search with filters (salary, type, skills, location)
-Interview scheduling with time slots and post-interview reviews
-Event management with booth assignments, check-ins, and monitoring
-Admin tools for analytics reports and user management
-Reports Generated:
-Student participation, recruiter hiring trends, placement stats
-Booth traffic and peak job fair timings
-#🧩 Key Functional Modules
-#👨‍🎓 Student Interface
-Register and log in via FAST email
-Build complete academic and skill profiles
-Search and apply for jobs with advanced filters
-Schedule interviews, view calendar, submit ratings
-#🏢 Recruiter Interface
-Submit company/job postings (subject to TPO approval)
-View and filter student applications
-Allocate interview slots and mark hiring outcomes
-#🧑‍💼 TPO (Admin) Interface
-Approve/reject users (students and recruiters)
-Create and schedule job fair events
-Assign booths and coordinators
-Generate reports and oversee system operations
-#🧑‍🔧 Booth Coordinator Interface
-Manage student check-ins at booths
-Track visitor flow and monitor booth activity
-#🛠️ Tech Stack
-Frontend: Windows Forms (C#)
-Backend: SQL Server
-Development Tool: Visual Studio 2019
-Data Access: ADO.NET / Stored Procedures
-Database Design: Normalized to 3NF
-#📊 Sample Reports & Analytics
-Student Participation: GPA distribution, department-wise registration
-Recruiter Activity: Interview counts, offer-to-acceptance ratios
-Placement Summary: Hiring percentages, average salaries
-Event Performance: Booth traffic, peak hours, resource utilization
-#📌 Notes
-All user roles are implemented with clear separation of access and responsibility.
-Data validation is enforced both at UI and database levels.
-A walkthrough video demo accompanies this submission, showcasing:
-Login and navigation
-CRUD operations for each role
-Report generation and sample analytics
-#🔐 Plagiarism Policy
-This project strictly adheres to academic honesty policies. All submitted work is original and built from scratch by the collaborators. No code or schema has been copied from external sources.
 
-📄 Documentation Includes
-📈 ER Diagram & Relational Schema
-🧠 Design Decisions Explained
-📸 User Manual with Screenshots
-🎥 Video Demo of System Functionality
-Made with 💼 and 💻 by M.Hashir & Zaki Haider – FAST-NUCES SE-B (DB Lab Final Project, Spring 2025)
+## 👥 Collaborators
+
+- 🧑‍💻 Muhammad Hashir (23I-3047)  
+- 🧑‍💻 Zaki Haider (23I-3091)
+
+
+## 🔁 Project Iterations
+
+### 🔹 Iteration 1: Database Design
+
+**Tools Used:** SQL Server Management Studio  
+
+**Deliverables:**
+- Entity Relationship Diagram (ERD)
+- Normalized relational schema (up to 3NF)
+- Data insertion scripts
+
+**Key Tables:**
+- USERS, STUDENT, RECRUITER, TPO, COORDINATOR  
+- JOB_FAIR_EVENTS, BOOTH, COMPANY  
+- INTERVIEWS, APPLICATION  
+- Associative tables for skills, reviews, job postings, etc.
+
+**Sample Data Requirements:**
+- 80+ students  
+- 20+ companies  
+- 5+ job fairs  
+- 200+ applications and interviews  
+
+
+### 🔹 Iteration 2: Interface Design
+
+**Platform:** Windows Forms (Visual Studio 2019+)
+
+**Key Interfaces:**
+- Student: Login, profile creation, job browsing, interview scheduling  
+- Recruiter: Job posting, applicant filtering, interview management  
+- TPO: Admin dashboard, approvals, event scheduling, reporting  
+- Booth Coordinator: Check-ins, booth traffic tracking  
+
+**Navigation Flow:**
+- Role-based modular access after login  
+- Seamless form transitions with context passing (e.g., studentID)
+
+
+### 🔹 Iteration 3: Final Integration & Functionality
+
+**Backend:** SQL Server (Stored Procedures)  
+**Frontend:** Windows Forms (C#)
+
+**Core Features:**
+- Secure authentication (students via FAST email, recruiters via approval)  
+- Profile management (GPA, semester, certifications, skills)  
+- Advanced job search (salary, type, skills, location filters)  
+- Interview scheduling with time slots and reviews  
+- Event & booth management with real-time tracking  
+- Admin analytics and reporting tools  
+
+
+## 🧩 Key Functional Modules
+
+### 👨‍🎓 Student Interface
+- Register/login via FAST email  
+- Build academic & skill profile  
+- Search & apply for jobs  
+- Schedule interviews and submit feedback  
+
+### 🏢 Recruiter Interface
+- Submit company and job postings  
+- View/filter applications  
+- Schedule interviews and finalize hiring decisions  
+
+### 🧑‍💼 TPO (Admin) Interface
+- Approve/reject users  
+- Manage job fair events  
+- Assign booths and coordinators  
+- Generate system reports  
+
+### 🧑‍🔧 Booth Coordinator Interface
+- Manage booth check-ins  
+- Track visitor flow and activity  
+
+
+## 🛠️ Tech Stack
+
+- **Frontend:** C# Windows Forms  
+- **Backend:** SQL Server  
+- **Development Tool:** Visual Studio 2019  
+- **Data Access:** ADO.NET / Stored Procedures  
+- **Database Design:** Normalized up to 3NF  
+
+## 📊 Reports & Analytics
+
+- **Student Participation:** GPA distribution, department stats  
+- **Recruiter Activity:** Interview counts, hiring trends  
+- **Placement Summary:** Hiring %, average salaries  
+- **Event Performance:** Booth traffic, peak hours  
+
+---
+
+## 📌 Notes
+
+- Role-based access control implemented  
+- Strong data validation (UI + database level)  
+- Fully functional CRUD operations for all roles  
+
+🎥 A demo video is included showing:
+- Login & navigation  
+- System workflows  
+- Report generation  
+
+
+## 🔐 Plagiarism Policy
+
+This project strictly adheres to academic integrity policies. All work is original and developed from scratch by the collaborators.
+
+
+## 📄 Documentation Includes
+
+- 📈 ER Diagram & Relational Schema  
+- 🧠 Design Decisions  
+- 📸 User Manual (Screenshots)  
+- 🎥 System Demo Video  
+
+
+## 💼 Authors
+
+Made with 💻 and dedication by:
+
+**Muhammad Hashir & Zaki Haider**  
+FAST-NUCES SE-B  
+DB Lab Final Project – Spring 2025
